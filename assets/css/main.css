@@ -11,8 +11,13 @@
 }
 
 
+/* .logo-tercera{
+	width: 200%;
+	height: 200%;
+} */
+
 .salto-nombre{
-	display: flex; !important
+	display: flex;
 }
 
 .content{
@@ -2416,8 +2421,8 @@ input, select, textarea {
 			}
 
 	.image {
-		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
-	}
+/* 		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+ */	}
 
 		.image.phone {
 			box-shadow: none;
@@ -2787,7 +2792,7 @@ input, select, textarea {
 	}
 
 		.spotlight .image {
-			width: 30%;
+			width: 70%;
 			border-radius: 100%;
 			margin: 0 3em 0 0;
 			display: block;
@@ -2845,7 +2850,7 @@ input, select, textarea {
 
 			.spotlight .image {
 				width: 100%;
-				max-width: 60%;
+				max-width: 100%;
 				margin: 0 0 2em 0 !important;
 			}
 

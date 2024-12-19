@@ -10,11 +10,40 @@
     font-display: swap;
 }
 
+.pagina-nico{
+	color: #1c26da;
+    border-bottom-color: #000000;
 
-/* .logo-tercera{
-	width: 200%;
-	height: 200%;
-} */
+}
+
+.integrantes{
+	width: 100% !important;
+	text-align: center !important;
+
+}
+
+.logo-tercera{
+	
+    box-shadow: 0 0 0 0 #ffffff, 0 0 0 0 #e6e6e6 !important; 
+}
+
+.ol-temas{
+	font-size: 20px;
+}
+
+.ol-temas li{
+	margin-bottom: 15px;
+}
+
+.p-bio{
+	font-size: 20px;
+	text-align: justify;
+}
+
+.h3-latercera{
+	color: #000000;
+	font-size: 25px;
+}
 
 .salto-nombre{
 	display: flex;
@@ -146,7 +175,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		color: #999999;
+		color: #000000;
 	}
 
 	html, input, select, textarea {
@@ -2421,8 +2450,8 @@ input, select, textarea {
 			}
 
 	.image {
-/* 		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
- */	}
+		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+	}
 
 		.image.phone {
 			box-shadow: none;

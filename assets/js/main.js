@@ -4,6 +4,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* reproductor de audio */
+document.addEventListener('DOMContentLoaded', function() {
+	const audioPlayer = document.getElementById('audioPlayer');
+	const links = document.querySelectorAll('.ol-temas a');
+
+	links.forEach(link => {
+		link.addEventListener('click', function(event) {
+			event.preventDefault();
+			const audioSrc = this.getAttribute('data-audio');
+			audioPlayer.src = audioSrc;
+			audioPlayer.style.display = 'block';
+			audioPlayer.play();
+		});
+	});
+});
+
 (function($) {
 
 	var	$window = $(window),

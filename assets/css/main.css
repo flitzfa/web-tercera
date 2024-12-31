@@ -10,6 +10,17 @@
     font-display: swap;
 }
 
+/* reproductor audio */
+.floating-audio {
+				position: fixed;
+				bottom: 10px;
+				left: 10px;
+				z-index: 1000;
+				border-radius: 20px;
+}
+
+/* reproductor audio */
+
 .pagina-nico{
 	color: #1c26da;
     border-bottom-color: #000000;

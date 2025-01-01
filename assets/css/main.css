@@ -21,6 +21,11 @@
 
 /* reproductor audio */
 
+
+.alinear-temas{
+	text-align: left;
+}	
+
 .pagina-nico{
 	color: #1c26da;
     border-bottom-color: #000000;

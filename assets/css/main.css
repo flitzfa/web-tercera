@@ -21,6 +21,10 @@
 
 /* reproductor audio */
 
+.texto-footer{
+	font-size: 20px;
+	color: #000000;
+}
 
 .alinear-temas{
 	text-align: left;

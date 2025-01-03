@@ -19,6 +19,23 @@
 				border-radius: 20px;
 }
 
+.efecto-respiracion{
+    color: rgb(248, 248, 248);
+
+    animation: 850ms infinite alternate ease-out breathing-color--dark;
+}
+
+@keyframes breathing-color--dark {
+    from
+    {
+        color: rgb(255, 254, 254);
+    }
+    to
+    {
+        color: #4696e5;
+    }
+}
+
 /* reproductor audio */
 
 .texto-footer{

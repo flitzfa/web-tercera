@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			const audioTitle = this.innerText || this.textContent;
 			audioPlayer.src = audioSrc;
 			floatingAudio.style.display = 'flex';
+			floatingAudio.classList.add('show'); // Agregar clase show
 			audioInfo.textContent = audioTitle;
 			audioInfo.style.display = 'block';
 			audioPlayer.style.display = 'block';
@@ -37,7 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
 			audioPlayer.setAttribute('data-index', nextIndex);
 			audioPlayer.play();
 		} else {
-			floatingAudio.style.display = 'none';
+			floatingAudio.classList.remove('show'); // Quitar clase show
+			setTimeout(() => {
+				floatingAudio.style.display = 'none';
+			}, 500); // Esperar a que termine la transición
 		}
 	});
 });

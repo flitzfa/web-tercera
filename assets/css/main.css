@@ -12,11 +12,51 @@
 
 /* reproductor audio */
 .floating-audio {
-				position: fixed;
-				bottom: 10px;
-				left: 10px;
-				z-index: 1000;
-				border-radius: 20px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.floating-audio audio {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 736px) {
+    .floating-audio {
+        bottom: 5px;
+        left: 5px;
+        width: calc(100% - 10px);
+        padding: 5px;
+    }
+
+    .floating-audio audio {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .floating-audio {
+        bottom: 5px;
+        left: 5px;
+        width: calc(100% - 10px);
+        padding: 5px;
+    }
+
+    .floating-audio audio {
+        height: 25px;
+    }
 }
 
 .efecto-respiracion{

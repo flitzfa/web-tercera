@@ -7,13 +7,19 @@
 /* reproductor de audio */
 document.addEventListener('DOMContentLoaded', function() {
 	const audioPlayer = document.getElementById('audioPlayer');
+	const audioInfo = document.getElementById('audioInfo');
+	const floatingAudio = document.querySelector('.floating-audio');
 	const links = document.querySelectorAll('.ol-temas a');
 
 	links.forEach((link, index) => {
 		link.addEventListener('click', function(event) {
 			event.preventDefault();
 			const audioSrc = this.getAttribute('data-audio');
+			const audioTitle = this.innerText || this.textContent;
 			audioPlayer.src = audioSrc;
+			floatingAudio.style.display = 'flex';
+			audioInfo.textContent = audioTitle;
+			audioInfo.style.display = 'block';
 			audioPlayer.style.display = 'block';
 			audioPlayer.play();
 			audioPlayer.setAttribute('data-index', index);
@@ -25,9 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		let nextIndex = currentIndex + 1;
 		if (nextIndex < links.length) {
 			const nextAudioSrc = links[nextIndex].getAttribute('data-audio');
+			const nextAudioTitle = links[nextIndex].innerText || links[nextIndex].textContent;
 			audioPlayer.src = nextAudioSrc;
+			audioInfo.textContent = nextAudioTitle;
 			audioPlayer.setAttribute('data-index', nextIndex);
 			audioPlayer.play();
+		} else {
+			floatingAudio.style.display = 'none';
 		}
 	});
 });
